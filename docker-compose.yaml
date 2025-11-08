@@ -12,6 +12,8 @@ services:
       CF_API_KEY: ${CF_API_KEY}
       CF_SLUG: aoc
       MODPACK_PLATFORM: AUTO_CURSEFORGE
+      INIT_MEMORY: ${INIT_MEMORY:-2G}
+      MAX_MEMORY: ${MAX_MEMORY:-4G}
 
     volumes:
       # attach the relative directory 'data' to the container's /data path
