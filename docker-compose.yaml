@@ -14,7 +14,13 @@ services:
       MODPACK_PLATFORM: AUTO_CURSEFORGE
       INIT_MEMORY: ${INIT_MEMORY:-2G}
       MAX_MEMORY: ${MAX_MEMORY:-4G}
+      MOTD: "Welcome to the Island chiggas."
+      OPS: |
+        Catley
+      ICON: /icon.png
+      OVERRIDE_ICON: true
 
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data
+      - ./icon.png:/icon.png
