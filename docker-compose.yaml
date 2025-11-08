@@ -8,7 +8,6 @@ services:
       - "25565:25565"
     environment:
       EULA: "TRUE"
-      MODPACK: "https://github.com/Marley-Mulvin-Broome/all-of-create-docker/releases/download/1.0.0/mods.zip"
       VERSION: "1.20.1"
       CF_API_KEY: ${CF_API_KEY}
       CF_SLUG: aoc
